@@ -108,14 +108,14 @@ input, select, textarea {
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			-moz-transition: none;
+			-webkit-transition: none;
+			-ms-transition: none;
+			transition: none;
 		}
 
 /**********TYPOGRAPHY***********/
@@ -158,12 +158,12 @@ input, select, textarea {
 
 	body {
 		background-color: #f5f5f5;
-		color: #000000;
+		color: #18509E;
 	}
 
 	body, input, select, textarea {
-		color: #3179DE;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #18509e;
+		font-family: 'Raleway', sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: 0.0375em;
@@ -178,7 +178,6 @@ input, select, textarea {
 		text-decoration: none;
 		color: #18509e;
 		font-weight: 510;
-		border-bottom: dotted 1px;
 	}
 
 		a:hover {
@@ -188,7 +187,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 600;
-		color: #3179DE;
+		color: #18509e;
 	}
 
 	em, i {
@@ -201,7 +200,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #18509E;
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: 'Cinzel', serif;
 		font-weight: 600;
 		letter-spacing: 0.175em;
 		line-height: 1.75;
@@ -215,7 +214,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Cinzel', serif;
 		font-size: 5rem;
 		font-weight: 700;
 		letter-spacing: -0.05em;
@@ -249,27 +248,23 @@ input, select, textarea {
 	/*******GENERAL STYLING**********/
 	/*******************************/
 	.linkContainer {
+		margin-bottom: -50px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 	}
-	.linkContainer a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		margin: 12px;
-		max-width: 28vw;
-		min-width: 22vw;
-		width: 18vw;
-		word-wrap: break-word;
-		font-size: 3vw;
-
+	.linkContainer ul li a {
+		margin: 50px 0 -30px 0;
+		padding: 30px;
+		max-width: 24vw;
+		min-width: 18vw;
+		width: 20vw;
 	}
 	.linkContainer a img {
-		margin-right: 10px;
-		width: 2.5vw;
+		margin-right: 15px;
+		width:3vw;
+		min-width: 35px;
 		border: .5px black solid;
 		-webkit-box-shadow:1px 1px 2px 2px #ccc;  
 		-moz-box-shadow: 1px 1px 2px 2px #ccc; 
@@ -1892,13 +1887,12 @@ input, select, textarea {
 		transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, color 0.25s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.325rem;
-		border: 0;
 		box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
-		color: #000000 !important;
+		color: #18509E;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6rem;
+		font-family: 'Raleway', sans-serif;
+		font-size: 1rem;
 		font-weight: 600;
 		height: 3rem;
 		letter-spacing: 0.175em;
@@ -1908,6 +1902,10 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
 	}
 
 		input[type="submit"]:hover,
@@ -1915,8 +1913,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #2ee4bb;
-			color: #2ee4bb !important;
+			box-shadow: inset 0 0 0 2px #3179DE;
+			color: #18509E !;
 		}
 
 		input[type="submit"]:active,
@@ -1924,9 +1922,9 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(73, 252, 212, 0.25);
-			box-shadow: inset 0 0 0 2px #2ee4bb;
-			color: #2ee4bb !important;
+			background-color: rgba(82, 154, 255, 0.25);
+			box-shadow: inset 0 0 0 2px #3179DE;
+			color: #18509E;
 		}
 
 		input[type="submit"].small,
@@ -1945,7 +1943,7 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.7rem;
+			font-size: 1.2vw;
 			height: 3.2625rem;
 			line-height: 3.2625rem;
 			padding: 0 3.25rem;
@@ -1993,9 +1991,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #599EFF;
+			background-color: #529AFF;
 			box-shadow: none;
-			color: #000000 !important;
+			color: #18509E;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2003,7 +2001,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #93ffe7;
+				background-color: #529AFF;
 			}
 
 			input[type="submit"].primary:active,
@@ -2011,7 +2009,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #44f2cb;
+				background-color: #529AFF;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2021,19 +2019,21 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				font-size: 0.7rem;
+				font-size: .8rem;
+				min-width: 35vw;
 				height: 3.3rem;
 				line-height: 3.3rem;
 			}
-
-				input[type="submit"].large,
-				input[type="reset"].large,
-				input[type="button"].large,
-				button.large,
-				.button.large {
-					font-size: 0.8rem;
-					height: 3.75rem;
-					line-height: 3.75rem;
+			
+			input[type="submit"].large,
+			input[type="reset"].large,
+			input[type="button"].large,
+			button.large,
+			.button.large {
+				font-size: 0.8rem;
+				height: 3.75rem;
+				line-height: 3.75rem;
+				min-width: 35vw;
 				}
 
 				input[type="submit"].small,
@@ -2167,13 +2167,12 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #2ee4bb;
+			border-color: #529AFF;
 		}
 
 	label {
-		color: #000000;
 		display: block;
-		font-family: "Raleway", Helvetica, sans-serif;
+		font-family: 'Cinzel', serif;
 		font-size: 0.75rem;
 		font-weight: 600;
 		letter-spacing: 0.175em;
@@ -2202,8 +2201,8 @@ input, select, textarea {
 	}
 
 		select option {
-			background-color: #ffffff;
-			color: #000000;
+			background-color: #f5;
+			color: #18509E;
 		}
 
 		select:focus::-ms-value {
@@ -2235,7 +2234,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #000000;
+			color: #18509E;
 			cursor: pointer;
 			display: inline-block;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -2257,8 +2256,8 @@ input, select, textarea {
 				font-variant: normal;
 				text-rendering: auto;
 				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
+				text-transform: none;
+				font-family: 'Cinzel', serif;
 				font-weight: 900;
 			}
 
@@ -2283,7 +2282,7 @@ input, select, textarea {
 			content: '\f00c';
 			background-color: #599EFF;
 			border-color: #599EFF;
-			color: #ffffff;
+			color: #f5;
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -2302,22 +2301,22 @@ input, select, textarea {
 
 	::-webkit-input-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: rgba(0, 0, 0, 0.25);
 	}
 
 	:-moz-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: rgba(0, 0, 0, 0.25);
 	}
 
 	::-moz-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: rgba(0, 0, 0, 0.25);
 	}
 
 	:-ms-input-placeholder {
 		opacity: 1.0;
-		color: rgba(0, 0, 0, 0.25) !important;
+		color: rgba(0, 0, 0, 0.25);
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2362,8 +2361,8 @@ input, select, textarea {
 			font-variant: normal;
 			text-rendering: auto;
 			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
+			text-transform: none;
+			font-family: 'Cinzel', serif;
 			font-weight: 400;
 		}
 
@@ -2376,10 +2375,24 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Cinzel', serif;
 		}
 
 /* Image */
+
+	.mainImg {
+		margin: 10px 0;
+		width: 80%;
+		border-radius: 20px;
+		height: auto;
+		-webkit-box-shadow: 2px 2px 3px 3px #ccc;  
+		-moz-box-shadow:    2px 2px 3px 3px #ccc;
+		box-shadow:         2px 2px 3px 3px #ccc;  
+	}
+	#brealaxImg{
+		height: auto;
+		width: 38%;
+	}
 	.image {
 		border: 0;
 		display: inline-block;
@@ -2718,7 +2731,7 @@ input, select, textarea {
 				-ms-flex-direction: column;
 				flex-direction: column;
 				margin-left: 0;
-				width: 100% !important;
+				width: 100%;
 			}
 
 				ul.actions:not(.fixed) li {
@@ -2825,7 +2838,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #000000;
+			color: #18509E;
 			font-size: 0.9rem;
 			font-weight: 600;
 			padding: 0 0.75rem 0.75rem 0.75rem;
@@ -3212,7 +3225,7 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				color: #000000;
+				color: #18509E;
 				display: block;
 				font-size: 1.25rem;
 				height: 3.25rem;
@@ -3290,9 +3303,9 @@ input, select, textarea {
 					margin: 0 0 5rem 0;
 				}
 
-				#wrapper section > header h1 + p {
-					font-family: "Raleway", Helvetica, sans-serif;
-					font-size: 0.8rem;
+				#wrapper section > header h1 + strong {
+					font-family: 'Cinzel', serif;
+					font-size: .9rem;
 					letter-spacing: 0.175em;
 					line-height: 2.5;
 					text-transform: uppercase;
@@ -3303,6 +3316,9 @@ input, select, textarea {
 				}
 
 			#wrapper section > .content {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
 				grid-area: content;
 				max-width: 60rem;
 				position: relative;
@@ -3340,7 +3356,7 @@ input, select, textarea {
 					display: block;
 					height: 2px;
 					position: absolute;
-					top: 1rem;
+					top: 1rem;					
 				}
 
 				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
@@ -3356,6 +3372,7 @@ input, select, textarea {
 
 			#wrapper > section > header h1 {
 				margin-top: -2rem;
+				font-size: 5vw;
 			}
 
 				#wrapper > section > header h1:before {
