@@ -156,7 +156,7 @@ input, select, textarea {
 
 		}
 		.workTitle {
-			font-size: 2em;
+			font-size: 1.75em;
 		}
 
 	body {
@@ -252,10 +252,6 @@ input, select, textarea {
 	/*******************************/
 	.linkContainer {
 		margin-bottom: -50px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 	}
 	.linkContainer ul li a {
 		margin: 50px 0 -30px 0;
@@ -280,7 +276,12 @@ input, select, textarea {
 	.titleContainer {
 		display: flex;
 		text-align: center;
-		/* word-wrap: none; */
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2030,7 +2031,7 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				font-size: .8rem;
+				font-size: 2rem;
 				min-width: 35vw;
 				height: 3.3rem;
 				line-height: 3.3rem;
@@ -2044,7 +2045,9 @@ input, select, textarea {
 				font-size: 0.8rem;
 				height: 3.75rem;
 				line-height: 3.75rem;
-				min-width: 35vw;
+				width: 35vw;
+				min-width: 40vw;
+				max-width: 40px;
 				}
 
 				input[type="submit"].small,
@@ -2742,7 +2745,7 @@ input, select, textarea {
 				-ms-flex-direction: column;
 				flex-direction: column;
 				margin-left: 0;
-				width: 100%;
+				width: 70%;
 			}
 
 				ul.actions:not(.fixed) li {
@@ -2762,20 +2765,21 @@ input, select, textarea {
 					ul.actions:not(.fixed) li > * {
 						width: 100%;
 					}
-
+					
 					ul.actions:not(.fixed) li:first-child {
 						padding-top: 0;
 					}
-
+					
 					ul.actions:not(.fixed) li input[type="submit"],
 					ul.actions:not(.fixed) li input[type="reset"],
 					ul.actions:not(.fixed) li input[type="button"],
 					ul.actions:not(.fixed) li button,
 					ul.actions:not(.fixed) li .button {
 						width: 100%;
+						font-size: 2.25vw;
 					}
-
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+					
+					ul.actions:not(.fixed) li input[type="submit"].icon:before,
 						ul.actions:not(.fixed) li input[type="reset"].icon:before,
 						ul.actions:not(.fixed) li input[type="button"].icon:before,
 						ul.actions:not(.fixed) li button.icon:before,

@@ -177,7 +177,8 @@
 							</header>
 						<div class="content">
 							<p>Have a comment or inquiry? Just wanna say hi? Send me a message and I'll get back to you ASAP.</p>
-							<form action="mailto:ryanslayen@gmail.com" method="post" enctype=”multipart/form-data” name="EmailForm">
+							<!-- <form action="javascript:sendMail()" method="post" enctype=”multipart/form-data” name="EmailForm"> -->
+							<form action="javascript:sendEmail()" action='mailto:ryanslayen@gmail.com?Subject=PersonalPage waddup ayyyy' method="post" enctype='text/plain' name="EmailForm">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -190,7 +191,7 @@
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
+									<li><input type="submit" id='sendMessageBtn' value="Send Message" class="button large" /></li>
 								</ul>
 							</form>
 						</div>
