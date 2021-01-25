@@ -7,17 +7,7 @@
 
 (function($) {
 	
-	// let name = document.getElementById("name");
-	// let email = document.getElementById("email");
-	// let message = document.getElementById("message");
-	// let sendMessageBtn = document.getElementById("sendMessageBtn");
 
-
-	// sendMessageBtn.addEventListener(sendEmail)
-
-	function sendEmail() {
-	window.open('mailto:ryanslayen@gmail.com')
-	}
 
 	var	$window = $(window),
 		$body = $('body');
