@@ -1959,6 +1959,10 @@ input, select, textarea {
 			height: 3.2625rem;
 			line-height: 3.2625rem;
 			padding: 0 3.25rem;
+			width: 16vw;
+		}
+		.longButton {
+			min-width: 20vw;
 		}
 
 		input[type="submit"].wide,
@@ -2032,9 +2036,10 @@ input, select, textarea {
 			button,
 			.button {
 				font-size: 2rem;
-				min-width: 35vw;
+				/* width: 55vw; */
 				height: 3.3rem;
 				line-height: 3.3rem;
+				/* background-color: red; */
 			}
 			
 			input[type="submit"].large,
@@ -2045,10 +2050,12 @@ input, select, textarea {
 				font-size: 0.8rem;
 				height: 3.75rem;
 				line-height: 3.75rem;
-				width: 35vw;
-				min-width: 40vw;
-				max-width: 40px;
+				width: 27vw;
+				min-width: 22vw;
 				}
+			.longButton {
+				min-width: 28vw  !important;
+			}
 
 				input[type="submit"].small,
 				input[type="reset"].small,
@@ -3505,6 +3512,21 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1152px) {
+
+			input[type="submit"].large,
+			input[type="reset"].large,
+			input[type="button"].large,
+			button.large,
+			.button.large {
+				font-size: 1.5vw;
+				height: 3.2625rem;
+				line-height: 3.2625rem;
+				padding: 0 3.25rem;
+				width: 22vw;
+			}
+			.longButton {
+				min-width: 26vw;
+			}
 
 			#wrapper > section.intro > header > * {
 				width: 100%;
